@@ -41,5 +41,8 @@ header nav ul li a {
   .brands-logo h1 {
     margin-bottom: 50px;
   }
+  .brands-logo .product-card h2 {
+    font-size: 16px;
+  }
 }
 /*# sourceMappingURL=machine.css.map */
