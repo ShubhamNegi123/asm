@@ -1,0 +1,156 @@
+$primary-color: #009ed6;
+$secondary-color: #ed1a23;
+$third-color: #979c88;
+
+.container {
+    max-width: 90%;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    ul {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+    }
+    h1,
+    h2,
+    h3,
+    h4 {
+        color: $primary-color;
+    }
+}
+
+header {
+    padding-top: 20px;
+    z-index: 99;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background: transparent;
+
+    .logo {
+        img {
+            width: 80%;
+            // height: 100px;
+        }
+    }
+    nav {
+        ul {
+            display: flex;
+            justify-content: space-between;
+            li {
+                a {
+                    transition: all 0.4s ease;
+                    position: relative;
+                    color: #fff;
+                    font-size: 16px;
+
+                    &::after {
+                        transition: all 0.4s ease;
+                        position: absolute;
+                        top: 28px;
+                        left: 50%;
+                        transition: translate(-50%);
+                        width: 0%;
+                        height: 3px;
+                        content: "";
+                        background-color: $secondary-color;
+                    }
+                    &::before {
+                        transition: all 0.4s ease;
+                        position: absolute;
+                        top: 28px;
+                        right: 50%;
+                        transition: translate(-50%);
+                        width: 0%;
+                        height: 3px;
+                        content: "";
+                        background-color: $secondary-color;
+                    }
+                }
+                &:hover {
+                    a {
+                        transition: all 0.4s ease;
+                        color: $secondary-color;
+                        &::after {
+                            transition: all 0.4s ease;
+                            width: 60%;
+                        }
+                        &::before {
+                            transition: all 0.4s ease;
+                            width: 60%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.hamburgur-menu {
+    display: none;
+}
+
+footer {
+    padding: 40px 0px;
+    background-color: #000;
+    .footer-contact,
+    .footer-nav,
+    .disclamer,
+    .working-hours {
+        ul {
+            li {
+                color: $third-color;
+                margin-bottom: 12px;
+                a {
+                    transition: all 0.5s ease;
+                    color: $third-color;
+                    &:hover {
+                        color: $secondary-color;
+                        transition: all 0.5s ease;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    header {
+        .logo {
+            width: 150px;
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    header nav {        
+        ul {
+            position: absolute;   
+            display: none;        
+        }
+    }
+    .hamburgur-menu {
+        position: absolute;
+        display: inline-block;
+        top: 30px;
+        right: 50px;
+        cursor: pointer;
+        i {
+            color: #fff;
+            font-size: 30px;
+        }
+    }
+    header {
+        .logo {
+            width: 150px;
+            img {
+                transform: rotate(14deg);
+            }
+        }
+    }
+}

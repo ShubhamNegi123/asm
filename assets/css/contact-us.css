@@ -1,0 +1,75 @@
+.container {
+  max-width: 80%;
+}
+
+.contact-banner img {
+  width: 100%;
+}
+
+.form-and-location h1 {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.form-and-location form {
+  margin-bottom: 50px;
+}
+
+.form-and-location form label {
+  padding-left: 20px;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  color: #009ed6;
+}
+
+.form-and-location form label i {
+  font-size: 8px;
+  color: #009ed6;
+}
+
+.form-and-location form input {
+  border-radius: 20px;
+  border: 2px solid #eee;
+  height: 40px;
+  display: inline-block;
+  width: 100%;
+  background-color: #eee;
+}
+
+.form-and-location form textarea {
+  background-color: #eee;
+  height: 100px;
+  width: 100%;
+  border-radius: 40px;
+  border: 2px solid #eee;
+  resize: none;
+}
+
+.form-and-location form button {
+  background-color: #009ed6;
+  color: #fff;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  margin-top: 30px;
+}
+
+.form-and-location form button:hover {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  background-color: #ed1a23;
+}
+
+.form-and-location .map {
+  width: 100%;
+  height: 100%;
+}
+
+.form-and-location .map iframe {
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=contact-us.css.map */
