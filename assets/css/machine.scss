@@ -1,0 +1,48 @@
+$primary-color: #009ed6;
+$secondary-color: #ed1a23;
+$third-color: #979c88;
+
+.container {
+    max-width: 90%;
+}
+header {
+    background-color: #fff;
+    nav ul li a {
+        color: #000;
+    }
+}
+.brands-logo {
+    margin-top: 200px;
+    margin-bottom: 100px;
+    h1 {
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 100px;
+    }
+    .product-card {
+        img {
+            width: 100%;
+            max-height: 200px;
+        }
+        h2 {
+            margin-top: 10px;
+            text-align: center;
+            font-size: 20px;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .brands-logo {
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+    .brands-logo h1 {
+        margin-bottom: 50px;
+    }
+    .brands-logo .product-card h2 {
+        font-size: 16px;
+      }
+}
