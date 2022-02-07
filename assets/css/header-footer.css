@@ -1,0 +1,168 @@
+.container {
+  max-width: 90%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+body ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body h1,
+body h2,
+body h3,
+body h4 {
+  color: #009ed6;
+}
+
+header {
+  padding-top: 20px;
+  z-index: 99;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background: transparent;
+}
+
+header .logo img {
+  width: 80%;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav ul li a {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  position: relative;
+  color: #fff;
+  font-size: 16px;
+}
+
+header nav ul li a::after {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  position: absolute;
+  top: 28px;
+  left: 50%;
+  -webkit-transition: translate(-50%);
+  transition: translate(-50%);
+  width: 0%;
+  height: 3px;
+  content: "";
+  background-color: #ed1a23;
+}
+
+header nav ul li a::before {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  position: absolute;
+  top: 28px;
+  right: 50%;
+  -webkit-transition: translate(-50%);
+  transition: translate(-50%);
+  width: 0%;
+  height: 3px;
+  content: "";
+  background-color: #ed1a23;
+}
+
+header nav ul li:hover a {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  color: #ed1a23;
+}
+
+header nav ul li:hover a::after {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  width: 60%;
+}
+
+header nav ul li:hover a::before {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  width: 60%;
+}
+
+.hamburgur-menu {
+  display: none;
+}
+
+footer {
+  padding: 40px 0px;
+  background-color: #000;
+}
+
+footer .footer-contact ul li,
+footer .footer-nav ul li,
+footer .disclamer ul li,
+footer .working-hours ul li {
+  color: #979c88;
+  margin-bottom: 12px;
+}
+
+footer .footer-contact ul li a,
+footer .footer-nav ul li a,
+footer .disclamer ul li a,
+footer .working-hours ul li a {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  color: #979c88;
+}
+
+footer .footer-contact ul li a:hover,
+footer .footer-nav ul li a:hover,
+footer .disclamer ul li a:hover,
+footer .working-hours ul li a:hover {
+  color: #ed1a23;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+@media only screen and (max-width: 576px) {
+  header .logo {
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  header nav ul {
+    position: absolute;
+    display: none;
+  }
+  .hamburgur-menu {
+    position: absolute;
+    display: inline-block;
+    top: 30px;
+    right: 50px;
+    cursor: pointer;
+  }
+  .hamburgur-menu i {
+    color: #fff;
+    font-size: 30px;
+  }
+  header .logo {
+    width: 150px;
+  }
+  header .logo img {
+    -webkit-transform: rotate(14deg);
+            transform: rotate(14deg);
+  }
+}
+/*# sourceMappingURL=header-footer.css.map */

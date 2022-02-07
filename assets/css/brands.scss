@@ -1,0 +1,50 @@
+$primary-color: #009ed6;
+$secondary-color: #ed1a23;
+$third-color: #979c88;
+
+.container {
+    max-width: 90%;
+}
+
+.brands-banner {
+    img {
+        width: 100%;
+    }
+}
+
+.automative-brands-logo,
+.non-automative-brands-logo {
+    margin: 80px;
+    h2,
+    h1 {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 50px;
+        font-weight: 600;
+    }
+    .logo {
+        margin-bottom: 50px;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 568px) {
+    .automative-brands-logo,
+    .non-automative-brands-logo {
+        margin: 20px;
+    }
+    .brands-banner img {
+        width: 100%;
+        min-height: 200px;
+    }
+
+    .automative-brands-logo h2, .automative-brands-logo h1, .non-automative-brands-logo h2, .non-automative-brands-logo h1 {
+        font-size: 25px;
+        margin-bottom: 30px;
+        padding: 0px;       
+      }
+}
+
