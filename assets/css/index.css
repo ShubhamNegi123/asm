@@ -132,7 +132,6 @@ body h4 {
   position: relative;
 }
 
-.our-mission .missions i,
 .our-mission .missions p {
   position: relative;
   z-index: 9;
@@ -140,11 +139,8 @@ body h4 {
   color: #fff;
 }
 
-.our-mission .missions i {
-  position: absolute;
-  top: 0px;
-  font-size: 20px;
-  left: 20px;
+.our-mission .missions p i {
+  margin-right: 10px;
 }
 
 .our-mission .missions p {
@@ -182,6 +178,9 @@ body h4 {
 
 .highlight .logs span {
   margin-left: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  color: red;
 }
 
 .highlight .logs span i {
@@ -217,6 +216,7 @@ body h4 {
 }
 
 .range-of-spares .heading h2 {
+  text-transform: uppercase;
   display: inline-block;
   font-weight: bold;
   margin-top: 50px;

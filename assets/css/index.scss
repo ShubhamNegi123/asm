@@ -114,20 +114,17 @@ body {
     .missions {
         margin-bottom: 30px;
         padding-left: 20px;
-        position: relative;
-        i,
+        position: relative;        
         p {
             position: relative;
             z-index: 9;
             line-height: 30px;
             color: #fff;
+            i{
+                margin-right: 10px;
+            }
         }
-        i {
-            position: absolute;
-            top: 0px;
-            font-size: 20px;
-            left: 20px;
-        }
+        
         p {
             padding-left: 40px;
         }
@@ -171,6 +168,9 @@ body {
         }
         span {
             margin-left: 10px;
+            font-size: 30px;
+            font-weight: bold;
+            color: red;
             i {
                 font-size: 30px;
                 color: $secondary-color;
@@ -200,6 +200,7 @@ body {
         text-align: center;
         margin-bottom: 50px;
         h2 {
+            text-transform: uppercase;
             display: inline-block;
             font-weight: bold;
             margin-top: 50px;
