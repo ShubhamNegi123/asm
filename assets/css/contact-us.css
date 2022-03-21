@@ -14,13 +14,11 @@
 }
 
 .form-and-location form {
-  margin-bottom: 50px;
+  margin: 50px 0px;
 }
 
 .form-and-location form label {
   padding-left: 20px;
-  margin-top: 30px;
-  margin-bottom: 5px;
   color: #009ed6;
 }
 
@@ -30,6 +28,7 @@
 }
 
 .form-and-location form input {
+  padding-left: 15px;
   border-radius: 20px;
   border: 2px solid #eee;
   height: 40px;
@@ -38,7 +37,17 @@
   background-color: #eee;
 }
 
+.form-and-location form .error {
+  visibility: hidden;
+  opacity: 0;
+  margin-bottom: 0px;
+  color: red;
+  padding-left: 15px;
+}
+
 .form-and-location form textarea {
+  padding-top: 10px;
+  padding-left: 15px;
   background-color: #eee;
   height: 100px;
   width: 100%;
