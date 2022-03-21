@@ -8,9 +8,9 @@
     <title>Equipments in Standard Room</title>
 
     <!-- bootstrap css cdn -->
-    <link rel="stylesheet" href="assets/css/bootstrap-5.1/bootstrap.min.css">
-    
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
     <!-- poppins google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -177,8 +177,9 @@
                 <div class="col-lg-4 col-md-3 col-sm-3 offset-sm-2 mt-4 mt-md-0 offset-md-1 offset-lg-0">
                     <div class="working-hours">
                         <ul>
-                            <li>Monday to  Saturday</li>
-                            <li>09:00 AM to 06:00 PM</li>                            
+                            <li>SATURDAY TO THURSDAY:</li>
+                            <li>8:30 AM TO 1 PM</li>
+                            <li>1:30 PM To 9 PM</li>
                         </ul>
                     </div>
                 </div>
@@ -197,9 +198,7 @@
     <script>
         $(function () {
 
-            $('.hamburgur-menu i').css({
-                color: '#fff'
-            })
+            
 
 
             $('.hamburgur-menu').click(function () {
@@ -212,15 +211,12 @@
                                 backgroundColor: '#fff'
                             });
                             $('nav ul li a').css({
-                                color: '#000'
+                                color: '#000 !important'
                             });
                         }
-                        if (scroll < 500) {
-                            $('nav ul').css({
-                                backgroundColor: '#fff'
-                            });
+                        if (scroll < 500) {                            
                             $('nav ul li a').css({
-                                color: '#000'
+                                color: '#000 !important'
                             });
                         }
                     });
@@ -249,10 +245,8 @@
 
             $(window).scroll(function (event) {
                 var scroll = $(window).scrollTop();
-                console.log(scroll);
                 var windowWidth = $(window).width();
-                console.log(windowWidth);
-                if (scroll > 1) {
+                if (scroll >= 10) {
                     $('header').css({
                         background: '#fff',
                         boxShadow: '0px 0px 20px -5px #000'
@@ -264,22 +258,23 @@
                         color: '#000'
                     })
                 }
-                if (scroll < 1) {
+                if (scroll < 10) {
                     $('header').css({
-                        background: 'transparent',
+                        background: '#fff',
                         boxShadow: 'none'
                     });
                     $('header nav ul li a').css({
-                        color: '#fff'
+                        color: '#000'
                     });
                     $('.hamburgur-menu i').css({
-                        color: '#fff'
+                        color: '#000'
                     })
                 }
             });
         });
         
     </script>
+    
 
 </body>
 
