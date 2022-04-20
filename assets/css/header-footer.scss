@@ -89,10 +89,143 @@ header {
             }
         }
     }
+
+    .social-media-links {
+        position: fixed;
+        bottom: 10px;
+        left: 15px;
+        width: 150px;
+        ul {
+            li {
+                margin-bottom: 20px;
+                a {
+                    i {
+                        font-size: 22px;
+                        padding: 10px 12px;
+                        border-radius: 50%;
+                        transition: all 0.3s ease;
+                        background-color: #009ed6;
+                        color: #fff;
+                        &:hover {
+                            transition: all 0.3s ease;
+                            color: #009ed6;
+                            background-color: #fff;
+                        }
+                    }
+                    .fa-facebook-f {
+                        padding: 10px 14px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .hamburgur-menu {
     display: none;
+}
+
+.milestones-wrapper {
+    overflow: scroll;
+    .milestones {
+        min-width: 1400px;
+        .upword-img {
+            img {
+                width: 100%;
+                height: 300px;
+            }
+        }
+        .milestone {
+            position: relative;
+            text-align: center;
+            margin-top: 50px;
+            &::before {
+                position: absolute;
+                top: -100px;
+                left: 50%;
+                transform: translate(-50%);
+                width: 2px;
+                height: 100px;
+                background-color: $primary-color;
+                content: "";
+            }
+            p {
+                color: #979c88;
+            }
+        }
+        .milestone1 {
+            &::before {
+                top: -80px;
+                height: 80px;
+            }
+        }
+        .milestone2 {
+            &::before {
+                top: -110px;
+                height: 110px;
+            }
+        }
+        .milestone3 {
+            &::before {
+                top: -160px;
+                height: 160px;
+            }
+        }
+        .milestone4 {
+            &::before {
+                top: -190px;
+                height: 190px;
+            }
+        }
+        .milestone5 {
+            &::before {
+                top: -220px;
+                height: 220px;
+            }
+        }
+        .milestone6 {
+            &::before {
+                top: -230px;
+                height: 230px;
+            }
+        }
+        .milestone7 {
+            &::before {
+                top: -270px;
+                height: 270px;
+            }
+        }
+    }
+}
+
+.contact-us {
+    margin: 100px 0px;
+    .heading {
+        text-align: center;
+        margin-bottom: 50px;
+        h2 {
+            color: $primary-color;
+            text-transform: uppercase;
+            display: inline-block;
+            padding: 10px 0px;
+            font-weight: bold;
+            font-size: 36px;
+            // border-bottom: 1px solid $secondary-color;
+        }
+    }
+    .contact-card {
+        text-align: center;
+        i {
+            color: $primary-color;
+            font-size: 40px;
+        }
+        p,
+        span {
+            color: $third-color;
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+        }
+    }
 }
 
 footer {
@@ -128,10 +261,10 @@ footer {
 }
 
 @media only screen and (max-width: 700px) {
-    header nav {        
+    header nav {
         ul {
-            position: absolute;   
-            display: none;        
+            position: absolute;
+            display: none;
         }
     }
     .hamburgur-menu {

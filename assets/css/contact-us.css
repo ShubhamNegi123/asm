@@ -12,21 +12,17 @@
   margin-top: 50px;
   text-align: center;
 }
-
 .form-and-location form {
   margin: 50px 0px;
 }
-
 .form-and-location form label {
   padding-left: 20px;
   color: #009ed6;
 }
-
 .form-and-location form label i {
   font-size: 8px;
   color: #009ed6;
 }
-
 .form-and-location form input {
   padding-left: 15px;
   border-radius: 20px;
@@ -36,7 +32,6 @@
   width: 100%;
   background-color: #eee;
 }
-
 .form-and-location form .error {
   visibility: hidden;
   opacity: 0;
@@ -44,7 +39,6 @@
   color: red;
   padding-left: 15px;
 }
-
 .form-and-location form textarea {
   padding-top: 10px;
   padding-left: 15px;
@@ -55,30 +49,24 @@
   border: 2px solid #eee;
   resize: none;
 }
-
 .form-and-location form button {
   background-color: #009ed6;
   color: #fff;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   width: 100%;
   height: 40px;
   border-radius: 20px;
   border: none;
   margin-top: 30px;
 }
-
 .form-and-location form button:hover {
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   background-color: #ed1a23;
 }
-
 .form-and-location .map {
   width: 100%;
   height: 100%;
 }
-
 .form-and-location .map iframe {
   width: 100%;
   height: 100%;
@@ -89,5 +77,4 @@
     width: 100%;
     min-height: 200px;
   }
-}
-/*# sourceMappingURL=contact-us.css.map */
+}/*# sourceMappingURL=contact-us.css.map */

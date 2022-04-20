@@ -1,23 +1,6 @@
 $(function () {
 
 
-
-
-
-
-
-
-
-
-
-  
-
-
-    // counter up animation
-    $('.stats').counterUp({
-        delay: 10,
-        time: 1000
-    });
     // home slider
     $('.home-slider').owlCarousel({
         loop: true,

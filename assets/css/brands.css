@@ -10,7 +10,6 @@
 .non-automative-brands-logo {
   margin: 80px;
 }
-
 .automative-brands-logo h2,
 .automative-brands-logo h1,
 .non-automative-brands-logo h2,
@@ -21,12 +20,10 @@
   margin-bottom: 50px;
   font-weight: 600;
 }
-
 .automative-brands-logo .logo,
 .non-automative-brands-logo .logo {
   margin-bottom: 50px;
 }
-
 .automative-brands-logo .logo img,
 .non-automative-brands-logo .logo img {
   width: 100%;
@@ -34,17 +31,18 @@
 
 @media only screen and (max-width: 568px) {
   .automative-brands-logo,
-  .non-automative-brands-logo {
+.non-automative-brands-logo {
     margin: 20px;
   }
+
   .brands-banner img {
     width: 100%;
     min-height: 200px;
   }
+
   .automative-brands-logo h2, .automative-brands-logo h1, .non-automative-brands-logo h2, .non-automative-brands-logo h1 {
     font-size: 25px;
     margin-bottom: 30px;
     padding: 0px;
   }
-}
-/*# sourceMappingURL=brands.css.map */
+}/*# sourceMappingURL=brands.css.map */

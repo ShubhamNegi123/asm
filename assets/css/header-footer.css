@@ -5,17 +5,14 @@
 body {
   font-family: "Poppins", sans-serif;
 }
-
 body ul {
   margin: 0px;
   padding: 0px;
   list-style: none;
 }
-
 body a {
   text-decoration: none;
 }
-
 body h1,
 body h2,
 body h3,
@@ -32,83 +29,173 @@ header {
   width: 100%;
   background: transparent;
 }
-
 header .logo img {
   width: 80%;
 }
-
 header nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 header nav ul li a {
-  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   position: relative;
   color: #fff;
   font-size: 16px;
 }
-
 header nav ul li a::after {
-  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   position: absolute;
   top: 28px;
   left: 50%;
-  -webkit-transition: translate(-50%);
   transition: translate(-50%);
   width: 0%;
   height: 3px;
   content: "";
   background-color: #ed1a23;
 }
-
 header nav ul li a::before {
-  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   position: absolute;
   top: 28px;
   right: 50%;
-  -webkit-transition: translate(-50%);
   transition: translate(-50%);
   width: 0%;
   height: 3px;
   content: "";
   background-color: #ed1a23;
 }
-
 header nav ul li:hover a {
-  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   color: #ed1a23;
 }
-
 header nav ul li:hover a::after {
-  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   width: 60%;
 }
-
 header nav ul li:hover a::before {
-  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   width: 60%;
+}
+header .social-media-links {
+  position: fixed;
+  bottom: 10px;
+  left: 15px;
+  width: 150px;
+}
+header .social-media-links ul li {
+  margin-bottom: 20px;
+}
+header .social-media-links ul li a i {
+  font-size: 22px;
+  padding: 10px 12px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  background-color: #009ed6;
+  color: #fff;
+}
+header .social-media-links ul li a i:hover {
+  transition: all 0.3s ease;
+  color: #009ed6;
+  background-color: #fff;
+}
+header .social-media-links ul li a .fa-facebook-f {
+  padding: 10px 14px;
 }
 
 .hamburgur-menu {
   display: none;
 }
 
+.milestones-wrapper {
+  overflow: scroll;
+}
+.milestones-wrapper .milestones {
+  min-width: 1400px;
+}
+.milestones-wrapper .milestones .upword-img img {
+  width: 100%;
+  height: 300px;
+}
+.milestones-wrapper .milestones .milestone {
+  position: relative;
+  text-align: center;
+  margin-top: 50px;
+}
+.milestones-wrapper .milestones .milestone::before {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 2px;
+  height: 100px;
+  background-color: #009ed6;
+  content: "";
+}
+.milestones-wrapper .milestones .milestone p {
+  color: #979c88;
+}
+.milestones-wrapper .milestones .milestone1::before {
+  top: -80px;
+  height: 80px;
+}
+.milestones-wrapper .milestones .milestone2::before {
+  top: -110px;
+  height: 110px;
+}
+.milestones-wrapper .milestones .milestone3::before {
+  top: -160px;
+  height: 160px;
+}
+.milestones-wrapper .milestones .milestone4::before {
+  top: -190px;
+  height: 190px;
+}
+.milestones-wrapper .milestones .milestone5::before {
+  top: -220px;
+  height: 220px;
+}
+.milestones-wrapper .milestones .milestone6::before {
+  top: -230px;
+  height: 230px;
+}
+.milestones-wrapper .milestones .milestone7::before {
+  top: -270px;
+  height: 270px;
+}
+
+.contact-us {
+  margin: 100px 0px;
+}
+.contact-us .heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.contact-us .heading h2 {
+  color: #009ed6;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 10px 0px;
+  font-weight: bold;
+  font-size: 36px;
+}
+.contact-us .contact-card {
+  text-align: center;
+}
+.contact-us .contact-card i {
+  color: #009ed6;
+  font-size: 40px;
+}
+.contact-us .contact-card p,
+.contact-us .contact-card span {
+  color: #979c88;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
 footer {
   padding: 40px 0px;
   background-color: #000;
 }
-
 footer .footer-contact ul li,
 footer .footer-nav ul li,
 footer .disclamer ul li,
@@ -116,22 +203,18 @@ footer .working-hours ul li {
   color: #979c88;
   margin-bottom: 12px;
 }
-
 footer .footer-contact ul li a,
 footer .footer-nav ul li a,
 footer .disclamer ul li a,
 footer .working-hours ul li a {
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   color: #979c88;
 }
-
 footer .footer-contact ul li a:hover,
 footer .footer-nav ul li a:hover,
 footer .disclamer ul li a:hover,
 footer .working-hours ul li a:hover {
   color: #ed1a23;
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
@@ -140,12 +223,12 @@ footer .working-hours ul li a:hover {
     width: 150px;
   }
 }
-
 @media only screen and (max-width: 700px) {
   header nav ul {
     position: absolute;
     display: none;
   }
+
   .hamburgur-menu {
     position: absolute;
     display: inline-block;
@@ -157,12 +240,11 @@ footer .working-hours ul li a:hover {
     color: #fff;
     font-size: 30px;
   }
+
   header .logo {
     width: 150px;
   }
   header .logo img {
-    -webkit-transform: rotate(14deg);
-            transform: rotate(14deg);
+    transform: rotate(14deg);
   }
-}
-/*# sourceMappingURL=header-footer.css.map */
+}/*# sourceMappingURL=header-footer.css.map */

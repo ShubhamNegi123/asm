@@ -19,7 +19,8 @@ $third-color: #979c88;
         img{
             width: 200px;
             // margin-bottom: -15px;
-            transform: rotate(14deg);
+            // transform: rotate(14deg);
+            margin-bottom: 20px;
         }
         h2{
             font-size: 25px;
@@ -43,19 +44,17 @@ $third-color: #979c88;
 }
 
 .mission-and-vission{
-    margin-top: 50px;
     .mission{
         h2{
             position: relative;
             z-index: 9;
-            margin-bottom: 20px;
-
+            margin-bottom: 20px;    
+            display: inline-block;              
             &::after {
                 position: absolute;
                 top: 45px;
-                left: 55px;
-                transform: translate(-50%);
-                width: 100px;
+                left: 5px;
+                width: 90%;
                 height: 2px;
                 content: "";
                 background-color: $secondary-color;
