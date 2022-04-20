@@ -1,0 +1,81 @@
+<div class="container">
+    <div class="hamburgur-menu">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="row justify-content-between align-items-center">
+        <div class="col-md-2 col-sm-2">
+            <div class="logo">
+                <a href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+            </div>
+        </div>
+
+        <div class="col-lg-7  col-sm-10 col-12">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-the-company.html">About Us</a></li>
+                    <!-- <li><a href="brands.html">Brands</a></li> -->
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="blog.html">Event & Blogs</a></li>
+                    <li><a href="quallity.html">Quallity</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="social-media-links">
+        <ul>
+            <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+        </ul>
+    </div>
+
+</div>
+
+<script>
+    $('.hamburgur-menu').click(function () {
+        if ($(window).width() < 700) {
+            $(window).scroll(function (event) {
+                var scroll = $(window).scrollTop();
+                var windowWidth = $(window).width();
+                if (scroll > 500) {
+                    $('nav ul').css({
+                        backgroundColor: '#fff'
+                    });
+                    $('nav ul li a').css({
+                        color: '#000'
+                    });
+                }
+                if (scroll < 500) {
+                    $('nav ul').css({
+                        backgroundColor: '#fff'
+                    });
+                    $('nav ul li a').css({
+                        color: '#000'
+                    });
+                }
+            });
+        }
+        $('nav ul').css({
+            flexDirection: 'column',
+            textAlign: 'center',
+            position: 'absolute',
+            left: '0px',
+            top: '70px',
+            width: '100%',
+            backgroundColor: '#fff'
+        });
+        $('nav ul li').css({
+            marginBottom: '10px'
+        });
+        $('nav ul li a').css({
+            color: '#000'
+        });
+
+        $('nav ul').slideToggle();
+
+    });
+</script>

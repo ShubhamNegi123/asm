@@ -4,58 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"  user-scalable="no">
     <title>About the Company</title>
 
     <!-- bootstrap css cdn -->
     <link rel="stylesheet" href="assets/css/bootstrap-5.1/bootstrap.min.css">
-    
-    
+
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+
     <!-- poppins google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <!-- fontawesome cdn -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-
+    <script>
+        $(function(){
+            $('#navigation-bar').load('navigation-bar.html');
+        });     
+        $(function(){
+            $('#footer').load('footer.html');
+        });  
+    </script>
 
     <!-- css file -->
-    <link rel="stylesheet" href="assets/css/header-footer.css">
     <link rel="stylesheet" href="assets/css/about-us.css">
+    <link rel="stylesheet" href="assets/css/header-footer.css">
 </head>
 
 <body>
 
     <!-- header starts from here -->
-    <header>
-        <div class="container">
-            <div class="hamburgur-menu">
-                <i class="fas fa-bars"></i>
-            </div>
-            <div class="row justify-content-between align-items-center">
-                <div class="col-md-2 col-sm-3">
-                    <div class="logo">
-                        <a href=""><img src="assets/images/logo.png" alt="logo"></a>
-                    </div>
-                </div>
-                
-                <div class="col-lg-5 col-sm-8 col-12">
-                    <nav>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about-the-company.html">About Us</a></li>
-                            <li><a href="brands.html">Brands</a></li>
-                            <li><a href="product.html">Products</a></li>
-                            <li><a href="contact-us.html">Contact Us</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
+    <header id="navigation-bar"></header>
     <!-- header ends here -->
 
     <section class="about-banner">
@@ -64,13 +49,13 @@
         </div>
     </section>
 
-    <section class="about-us">       
+    <section class="about-us">
         <div class="container-fluid">
             <div class="row align-items-center justify-content-center">
                 <div class="col-xl-10 col-lg-12 col-10">
                     <div class="about-us-content text-center">
                         <img src="assets/images/logo.png" alt="logo">
-                        <h3>"One Stop Solution For All your Auto Spare Parts"</h3>
+                        <h3>"Think innovation Think ASM."</h3>
                         <p><b> ASM CASTINGS PVT LTD </b> is a Faridabad, Haryana, India based manufacturer of aluminium
                             and zinc
                             die casting components and brake lining with an annual turnover of 80 Cr. We have a legacy
@@ -83,7 +68,7 @@
                             Our Company is well aware of its environmental responsibilities, Solar Setup, PNG operated
                             furnaces and many other efforts have been made to enhance our green footprint.</p>
                     </div>
-                  
+
                 </div>
             </div>
         </div>
@@ -92,23 +77,28 @@
     <section class="mission-and-vission">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-4 col-10">
+                <div class="col-10">
                     <div class="mission">
                         <h2>Our Vision</h2>
                         <ul>
                             <li>Sourcing right product from right place of right quality and supplying the same to right
                                 customer in right time that too with global competitive price.</li>
-                            <li>To serve premier segment of automobiles in U.A.E. in better way.</li>
+                                <li>Our vision is to be the one stop solution for all the aluminum and zinc die castings needs.                                    
+                                    Also we want to establish ASM as a brand in the world of brake lining, Die casting and alloying.</li>
+                                    <li>At ASM we strive to provide you with the best quality of products with 100% customer satisfaction</li>
+                            <!-- <li>To serve premier segment of automobiles in U.A.E. in better way.</li> -->
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-4 col-10">
+                <div class=" col-10">
                     <div class="mission">
                         <h2>Our Mission</h2>
                         <ul>
-                            <li>To maintain sufficient stocks to ensure quick delivery and minimum back orders would
-                                like to be involved with todays most challenging multidimensional import marketing
-                                assignments.
+                            <li>ASM Castings is dedicated to delivering effective , efficient and cost friendly Products
+                                to its customers and we wish to achieve the first choice of every Indian in various
+                                field as Al. & Zinc Ingot ,Brake Lining & Casting.
+                                <br> <br>
+                                “ ASM का यह नारा है भारत के हर घर एक प्रोडक्ट हमारा है “
                             </li>
                         </ul>
                     </div>
@@ -117,99 +107,14 @@
         </div>
     </section>
 
-
-
-
-
-
-
-
-    <!-- contact starts from here -->
-    <section class="contact-us">
-        <div class="heading">
-            <h2>Contact Us</h2>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-2 col-sm-3 offset-sm-2  offset-md-0">
-                    <div class="contact-card">
-                        <i class="fas fa-phone-alt"></i>
-                        <p>+91 9212247615 </p>
-                        <span>Call Us</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-2 col-sm-3 offset-sm-2  mt-4 mt-sm-0 offset-md-1 offset-lg-0">
-                    <div class="contact-card">
-                        <i class="fab fa-whatsapp-square"></i>
-                        <p>+91 9212247615 </p>
-                        <span>Whatsapp Us</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-2 col-sm-3 offset-sm-2 mt-4 mt-md-0 offset-md-1 offset-lg-0">
-                    <div class="contact-card">
-                        <i class="fas fa-envelope"></i>
-                        <p>rajiv@asmcasting.in </p>
-                        <span> Email Us</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-2 col-sm-3 offset-sm-2 mt-4 mt-md-0 offset-md-1 offset-lg-0">
-                    <div class="contact-card">
-                        <i class="fas fa-comment-alt"></i>
-                        <p>Leave Message </p>
-                        <span>Our Team Will Call You Back </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- contact section ends here -->
+    
 
     <!-- footer starts from here -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-3 col-sm-3 offset-sm-2  offset-md-0">
-                    <div class="footer-contact">
-                        <ul>
-                            <li><a href="contact-us.html"><b>ADDRESS:</b></a></li>
-                            <li><a href="contact-us.html">Plot No. 116-117,</a></li>
-                            <li><a href="contact-us.html">Sector-25 Faridabad</a></li>
-                            <li><a href="contact-us.html">Haryana, 121004</a></li>
-                            <li><a href="contact-us.html">WhatsApp: +91 9212247615</a></li>
-                            <li><a href="contact-us.html">Email: rajiv@asmcasting.in</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-3 col-sm-3 offset-sm-2  mt-4 mt-sm-0 offset-md-1 offset-lg-0">
-                    <div class="footer-nav">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about-the-company.html">About Us</a></li>
-                            <li><a href="brands.html">Brands</a></li>
-                            <li><a href="product.html">Products</a></li>
-                            <li><a href="contact-us.html">Contact Us</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-3 col-sm-3 offset-sm-2 mt-4 mt-md-0 offset-md-1 offset-lg-0">
-                    <div class="working-hours">
-                        <ul>
-                            <li>Monday to  Saturday</li>
-                            <li>09:00 AM to 06:00 PM</li>                            
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <div id="footer"></div>
     <!-- footer section ends here -->
 
-
-
-
     <!-- jquery cdn -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <script src="assets/js/header-footer.js"></script>
 

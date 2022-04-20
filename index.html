@@ -4,26 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"  user-scalable="no">
     <title>ASM - Home Page</title>
 
     <!-- bootstrap css cdn -->
     <link rel="stylesheet" href="assets/css/bootstrap-5.1/bootstrap.min.css">
-    
-    
+
+
     <!-- owl carosal cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css"
-        integrity="sha512-C8Movfk6DU/H5PzarG0+Dv9MA9IZzvmQpO/3cIlGIflmtY3vIud07myMu4M/NTPJl8jmZtt/4mC9bAioMZBBdA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css" />
 
     <!-- fontawesome cdn -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
     <!-- poppins google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,9 +32,19 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- animate css cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-        integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(function () {
+            $('#navigation-bar').load('navigation-bar.html');
+        });
+        $(function () {
+            $('#footer').load('footer.html');
+        });  
+    </script>
 
     <!-- css file -->
     <link rel="stylesheet" href="assets/css/header-footer.css">
@@ -44,33 +52,9 @@
 </head>
 
 <body>
+
     <!-- header starts from here -->
-    <header>
-        <div class="container">
-            <div class="hamburgur-menu">
-                <i class="fas fa-bars"></i>
-            </div>
-            <div class="row justify-content-between align-items-center">
-                <div class="col-md-2 col-sm-3">
-                    <div class="logo">
-                        <a href=""><img src="assets/images/logo.png" alt="logo"></a>
-                    </div>
-                </div>
-                
-                <div class="col-lg-5 col-sm-8 col-12">
-                    <nav>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about-the-company.html">About Us</a></li>
-                            <li><a href="brands.html">Brands</a></li>
-                            <li><a href="product.html">Products</a></li>
-                            <li><a href="contact-us.html">Contact Us</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
+    <header id="navigation-bar"></header>
     <!-- header ends here -->
 
     <!-- home section starts from here -->
@@ -92,7 +76,7 @@
                 <div class="col-xl-10 col-lg-12 col-10">
                     <div class="about-us-content text-center">
                         <img src="assets/images/logo.png" alt="logo">
-                        <h3>"One Stop Solution For All your Auto Spare Parts"</h3>
+                        <h3>"Think innovation Think ASM."</h3>
                         <p><b> ASM CASTINGS PVT LTD </b> is a Faridabad, Haryana, India based manufacturer of aluminium
                             and zinc
                             die casting components and brake lining with an annual turnover of 80 Cr. We have a legacy
@@ -104,7 +88,7 @@
                             products according to the demand of the customer.
                             Our Company is well aware of its environmental responsibilities, Solar Setup, PNG operated
                             furnaces and many other efforts have been made to enhance our green footprint.</p>
-                            <a href="about-the-company.html">Read More..</a>
+                        <a href="about-the-company.html">Read More..</a>
                     </div>
                     <!-- </div>
                 <div class="col-lg-5 gx-0">
@@ -121,32 +105,30 @@
     <section class="our-mission">
         <div class="container">
             <div class="heading">
-                <h2>MISSION & VALUE</h2>
+                <h2>Message from board of Directors</h2>
                 <i class="fas fa-life-ring"></i>
             </div>
-            <div class="row">
-                <div class="col-12 text-center">
-                    <div class="missions">                        
-                        <p><i class="fas fa-crosshairs"></i>Provide superior products and services to our customers and maintain market leadership</p>
+            <div class="row justify-content-center">
+                <div class=" col-lg-8 col-11  text-sm-center">
+                    <div class="missions">
+                        <p>A company's growth is not an accident rather its a journey
+                            of its team who believes in quality more than the quantity. And growth is not credited to
+                            any particular person or department. it is a result of high intension , sincere efforts,
+                            intelligent directions with skilful executions of the team with maximum customer
+                            satisfaction.
+                        </p>
+                        <p class="text-right director-name">Mr. Indiwar Gupta</p>
                     </div>
                 </div>
-               <!--  <div class="col-md-6">
+                <div class="col-lg-8 col-sm-12 col-11  text-sm-center">
                     <div class="missions">
-                        <i class="fas fa-crosshairs"></i>
-                        <p>Evolve institution that serves the best interests of all stackholders</p>
-                    </div>
-                </div> -->
-                <div class="col-12 text-center">
-                    <div class="missions">                        
-                        <p><i class="fas fa-crosshairs"></i>Ensure that higher standard of ethics and intergity in all our actions</p>
+                        <p>ASM Castings believes to values its employees because happy
+                            employees leads to happy customers which leads to more profits. Our focus is always on
+                            latest technologies in manufacturing as no industry is ever successful in a long term with
+                            out a really strong and vibrant manufacturing base</p>
+                        <p class="text-right director-name">Mr. Rajiv Nayan Gupta</p>
                     </div>
                 </div>
-               <!--  <div class="col-md-6">
-                    <div class="missions">
-                        <i class="fas fa-crosshairs"></i>
-                        <p>pursue excellence23 through totel quentity management </p>
-                    </div>
-                </div> -->
             </div>
         </div>
     </section>
@@ -163,50 +145,50 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="logs">
                         <p>Annul turnover </p>
-                        <p class="stats">80 </p><span>cr</span>                        
+                        <p class="stats">80 </p><span>cr</span>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="logs">
                         <p>employees strength of</p>
-                        <p class="stats">250</p><span><i class="fas fa-plus"></i></span>                        
+                        <p class="stats">250</p><span><i class="fas fa-plus"></i></span>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="logs">
                         <p>Product Range</p>
-                        <p class="stats">150</p><span><i class="fas fa-plus"></i></span>                       
+                        <p class="stats">150</p><span><i class="fas fa-plus"></i></span>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="logs">
                         <p>Customers</p>
-                        <p class="stats">30</p><span><i class="fas fa-plus"></i></span>                        
+                        <p class="stats">30</p><span><i class="fas fa-plus"></i></span>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="logs">
                         <p>Catering to Countries</p>
-                        <p class="stats">10</p><span><i class="fas fa-plus"></i></span>                        
+                        <p class="stats">10</p><span><i class="fas fa-plus"></i></span>
                     </div>
                 </div>
-                
+
                 <div class="col-lg-3 col-sm-6">
                     <div class="logs">
                         <p>Customer Satisfaction</p>
-                        <p class="stats">99</p><span>%</span>                        
+                        <p class="stats">99</p><span>%</span>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="logs">
                         <p>Market Failure</p>
-                        <p class="stats">0</p><span></span>                        
+                        <p class="stats">0</p><span></span>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="logs">
                         <p>Plant Facility </p>
-                        <p class="">All Solutions under one Roof</p><span><i class="fas fa-house"></i></span>                        
+                        <p class="">All Solutions under one Roof</p><span><i class="fas fa-house"></i></span>
                     </div>
                 </div>
             </div>
@@ -214,58 +196,56 @@
     </section>
     <!-- highlight section ends here -->
 
-
     <!-- .range of products -->
     <section class="range-of-spares">
         <div class="container">
             <div class="heading">
                 <h2>Manufacturing & Testing Facilities</h2>
             </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-6">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 col-sm-6">
                     <a href="equipment-in-standard-room.html">
                         <div class="spares-img">
                             <img src="assets/images/Equipments in Standard Room.jpg" alt="">
                         </div>
                     </a>
                 </div>
-                <div class="col-md-4 col-sm-6">
-                   <a href="manufacturing-facilities.html">
-                    <div class="spares-img">
-                        <img src="assets/images/Manufacturing.jpg" alt="">
-                    </div>
-                   </a>
+                <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+                    <a href="manufacturing-facilities.html">
+                        <div class="spares-img">
+                            <img src="assets/images/Manufacturing.jpg" alt="">
+                        </div>
+                    </a>
                 </div>
-                
-                <div class="col-md-4 col-sm-6">
+
+                <div class="col-lg-4 col-md-6 col-sm-6 mt-3">
                     <a href="plant-and-achinery-in-finishing-section.html">
                         <div class="spares-img">
                             <img src="assets/images/Plant & Machinery in Finishing Section.jpg" alt="">
                         </div>
-                        
+
                     </a>
                 </div>
-                <div class="col-md-4 col-sm-6 offset-md-1 mt-md-5">
+                <!-- <div class="col-md-4 col-sm-6 offset-md-1 mt-md-5">
                     <a href="plant-and-machinery-in-moldings-section.html ">
                         <div class="spares-img">
                             <img src="assets/images/Plant & Machinery in Moldings Section (Brake Lining).jpg" alt="">
                         </div>
                     </a>
-                </div>
-                <div class="col-md-4 col-sm-6 mt-md-5 offset-md-1">
-                   <a href="PDC-machines.html">
-                    <div class="spares-img">
-                        <img src="assets/images/PDC Facilities.jpg" alt="">
-                    </div>
-                   </a>
+                </div> -->
+                <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1 mt-3">
+                    <a href="PDC-machines.html">
+                        <div class="spares-img">
+                            <img src="assets/images/PDC Facilities.jpg" alt="">
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-
     <!-- brands starts from here -->
-    <div class="brands">
+    <!-- <div class="brands">
         <div class="heading">
             <h2>Esteemed Customers-Automative</h2>
         </div>
@@ -300,127 +280,103 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- brands section ends here -->
 
-
     <!-- spares starts from here -->
-    <div class="spares">
-       <div class="container">
-        <div class="heading">
-            <h2>Esteemed Customers-Non-Automative</h2>
+    <!-- <div class="spares">
+        <div class="container">
+            <div class="heading">
+                <h2>Esteemed Customers-Non-Automative</h2>
+            </div>
         </div>
-       </div>
         <div class="container">
             <div class="spares-logo ">
                 <div class="row">
                     <div class="col-lg-3 col-md-2 col-sm-3 offset-sm-2 text-center   offset-md-0   ">
                         <img src="assets/images/brand21.png" alt="11">
                     </div>
-                    <div class="col-lg-3 col-md-2 col-sm-3 offset-sm-2  text-center  mt-4 mt-sm-0 offset-md-1 offset-lg-0 ">
+                    <div
+                        class="col-lg-3 col-md-2 col-sm-3 offset-sm-2  text-center  mt-4 mt-sm-0 offset-md-1 offset-lg-0 ">
                         <img src="assets/images/brand22.png" alt="11">
                     </div>
-                    <div class="col-lg-3 col-md-2 col-sm-3 offset-sm-2 text-center  mt-4 mt-md-0 offset-md-1 offset-lg-0 ">
+                    <div
+                        class="col-lg-3 col-md-2 col-sm-3 offset-sm-2 text-center  mt-4 mt-md-0 offset-md-1 offset-lg-0 ">
                         <img src="assets/images/brand23.png" alt="11">
                     </div>
-                    <div class="col-lg-3 col-md-2 col-sm-3 offset-sm-2  text-center  mt-4 mt-md-0 offset-md-1 offset-lg-0 ">
+                    <div
+                        class="col-lg-3 col-md-2 col-sm-3 offset-sm-2  text-center  mt-4 mt-md-0 offset-md-1 offset-lg-0 ">
                         <img src="assets/images/brand24.png" alt="11">
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- spares section ends here -->
 
-    <!-- contact starts from here -->
-    <section class="contact-us">
-        <div class="heading">
-            <h2>Contact Us</h2>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-2 col-sm-3 offset-sm-2  offset-md-0">
-                    <div class="contact-card">
-                        <i class="fas fa-phone-alt"></i>
-                        <p>+91 9212247615 </p>
-                        <span>Call Us</span>
+    <div class="milestones-wrapper">
+        <section class="milestones">
+            <div class="container">            
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="upword-img">
+                            <img src="assets/images/arrow.png" alt="arrow">
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-2 col-sm-3 offset-sm-2  mt-4 mt-sm-0 offset-md-1 offset-lg-0">
-                    <div class="contact-card">
-                        <i class="fab fa-whatsapp-square"></i>
-                        <p>+91 9212247615 </p>
-                        <span>Whatsapp Us</span>
+                    <div class="col-1">
+                        <div class="milestone milestone1">
+                            <h3>2005</h3>
+                            <p>Starting</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-2 col-sm-3 offset-sm-2 mt-4 mt-md-0 offset-md-1 offset-lg-0">
-                    <div class="contact-card">
-                        <i class="fas fa-envelope"></i>
-                        <p>rajiv@asmcasting.in </p>
-                        <span> Email Us</span>
+                    <div class="col-2">
+                        <div class="milestone milestone2">
+                            <h3>2007</h3>
+                            <p>Registered under company act 1956. with QMS Certification and plant facilities such as
+                                b'lining, Die Casting & Machining with CNC Machines.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-2 col-sm-3 offset-sm-2 mt-4 mt-md-0 offset-md-1 offset-lg-0">
-                    <div class="contact-card">
-                        <i class="fas fa-comment-alt"></i>
-                        <p>Leave Message </p>
-                        <span>Our Team Will Call You Back </span>
+                    <div class="col-2">
+                        <div class="milestone milestone3">
+                            <h3>2012</h3>
+                            <p>Automation achieved in PDC with Machining such as auto ladle /Auto Spray, SPM , VMC</p>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- contact section ends here -->
+                    <div class="col-2">
+                        <div class="milestone milestone4">
+                            <h3>2017</h3>
+                            <p>A new unit established with a capacity of 400 ton having area of 2650 Sq. Feet.</p>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="milestone milestone5">
+                            <h3>2019</h3>
+                            <p>Achieved Silver rating in ZED & IATF 16949-2016</p>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="milestone milestone6">
+                            <h3>2021</h3>
+                            <p>A new unit established with having an area of 10000 Sq. Feet</p>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="milestone milestone7">
+                            <h3>2022</h3>
+                            <p>Moving toward continues growth  with adding alloy manufacturing Facility,</p>
+                        </div>
+                    </div>
 
-    <!-- footer starts from here -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-3 col-sm-3 offset-sm-2  offset-md-0">
-                    <div class="footer-contact">
-                        <ul>
-                            <li><a href="contact-us.html"><b>ADDRESS:</b></a></li>
-                            <li><a href="contact-us.html">Plot No. 116-117,</a></li>
-                            <li><a href="contact-us.html">Sector-25 Faridabad</a></li>
-                            <li><a href="contact-us.html">Haryana, 121004</a></li>
-                            <li><a href="contact-us.html">WhatsApp: +91 9212247615</a></li>
-                            <li><a href="contact-us.html">Email: rajiv@asmcasting.in</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-3 col-sm-3 offset-sm-2  mt-4 mt-sm-0 offset-md-1 offset-lg-0">
-                    <div class="footer-nav">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about-the-company.html">About Us</a></li>
-                            <li><a href="brands.html">Brands</a></li>
-                            <li><a href="product.html">Products</a></li>
-                            <li><a href="contact-us.html">Contact Us</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-3 col-sm-3 offset-sm-2 mt-4 mt-md-0 offset-md-1 offset-lg-0">
-                    <div class="working-hours">
-                        <ul>
-                            <li>Monday to  Saturday</li>
-                            <li>09:00 AM to 06:00 PM</li>                            
-                        </ul>
-                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    <!-- footer section ends here -->
+        </section>
+    </div>
 
 
-
-
-
-
+    <div id="footer"></div>
 
     <!-- jquery cdn -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <!-- jquery cdn -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -437,12 +393,24 @@
     <script src="assets/js/header-footer.js"></script>
     <script src="assets/js/index.js"></script>
 
-
     <!-- owl carosal cdn -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
+    <script>
+        // counter up animation
+        $('.stats').counterUp({
+            delay: 10,
+            time: 1000
+        });
+        if ($this.data("text") == undefined) {
+            $this.data("text", $this.text());
+        } else {
+            $this.text($this.data("text"));
+        }
+
+        var num = $this.text();
+    </script>
+    
 </body>
 
 </html>
